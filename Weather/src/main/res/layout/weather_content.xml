@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.moriarty.user.weather.OtherUserDefind.PullRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/refreshLayout"
+    android:gravity="center"
+    tools:showIn="@layout/weather_main"
+    tools:context=".WeatherActivity">
+    <ScrollView
+        android:id="@+id/w_WeatherScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+        <LinearLayout
+            android:id="@+id/w_WeatherLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/weather_content1"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/w_divider_size"
+                android:background="@color/w_divider" />
+
+            <include layout="@layout/weather_content2"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/w_divider_size"
+                android:layout_marginTop="0dp"
+                android:background="@color/w_divider" />
+            <!-- 详细信息 -->
+
+            <include layout="@layout/weather_content3"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/w_divider_size"
+                android:background="@color/w_divider" />
+
+            <!-- 空气质量 -->
+
+            <include layout="@layout/weather_content4"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/w_divider_size"
+                android:background="@color/w_divider" />
+            <!-- 太阳和风速 -->
+
+            <include layout="@layout/weather_content5"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/w_divider_size"
+                android:background="@color/w_divider" />
+
+            <include layout="@layout/weather_content6"/>
+
+            <View style="@style/suggestion_divider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="和风天气 | 中国天气网"
+                android:textColor="@color/w_text_secondary"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </ScrollView>
+</com.moriarty.user.weather.OtherUserDefind.PullRefreshLayout>

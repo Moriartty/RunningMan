@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Login.LoginActivity"
+    android:paddingTop="10dp">
+    <ImageView
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/login_logo"
+        android:id="@+id/login_logo"/>
+
+    <com.moriarty.user.runningman.Login.View.CatchScrollLayout
+        android:id="@+id/catch_sroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:layout_below="@id/login_logo">
+
+        <com.moriarty.user.runningman.Login.View.SignUpContainer
+            android:id="@+id/sign_up_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.moriarty.user.runningman.Login.View.CatchScrollLayout>
+
+
+
+</RelativeLayout>

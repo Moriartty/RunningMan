@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/user/AndroidStudioProjects/Project/RunningMan/app/libs/xUtils-2.6.14.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
+        <dex dex="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/transforms/dex/debug/folders/1000/2/xUtils-2.6.14_590c63dfb2ff4a2ca1ff217a6f518281146b7d2d/classes.dex" />
+    </item>
+    <item
+        jar="/home/user/AndroidStudioProjects/Project/RunningMan/app/libs/converter-gson-2.1.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/transforms/dex/debug/folders/1000/2/converter-gson-2.1.0_5438d9846e29e20d6bfba82f4c5eee82614ed869/classes.dex" />
+    </item>
+    <item
+        jar="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.1.0_d2ba6c2f0f8d300c85e2e2f6adb1832b74fe3a2c/classes.dex" />
+    </item>
+    <item
+        jar="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/exploded-aar/RunningMan/map/unspecified/jars/libs/AMap3DMap_5.4.0_AMapSearch_5.3.1_AMapLocation_3.6.1_20171012.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="29d7d2690eef955e4b6decc83453b3f8c9dc1e50">
+        <dex dex="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/transforms/dex/debug/folders/1000/8/AMap3DMap_5.4.0_AMapSearch_5.3.1_AMapLocation_3.6.1_20171012_ed0f03a3b5fe70060647336d16d3c03c605b6ada/classes.dex" />
+    </item>
+    <item
+        jar="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="39ae02ce40c3ac828abbf780ce0ff5d7a28b7d6a">
+        <dex dex="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-23.0.1_dfe8909c1fb473a50553df32946a3054339e92ed/classes.dex" />
+    </item>
+    <item
+        jar="/home/user/AndroidStudioProjects/Project/RunningMan/app/libs/okhttp-3.2.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/transforms/dex/debug/folders/1000/2/okhttp-3.2.0_a12d2f515bf98353f86ddfb73e849c6504d92214/classes.dex" />
+    </item>
+    <item
+        jar="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.0.1_b25b59b86f08611d49434611bf806e41babe7a9e/classes.dex" />
+    </item>
+    <item
+        jar="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/exploded-aar/RunningMan/Weather/unspecified/jars/libs/gson-2.4.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="97b664a85dd91536b01065d4c5aa6f6d52a681ef">
+        <dex dex="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/transforms/dex/debug/folders/1000/8/gson-2.4_b2735c5bf04589d1515d52972592aa79a100e54a/classes.dex" />
+    </item>
+    <item
+        jar="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="0a4432f073f9ccb8ee57ebb1371e94c2b0b23f3e">
+        <dex dex="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9352dd73a0132253916f6083c9af1a20e2330865/classes.dex" />
+    </item>
+    <item
+        jar="/local/temp/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.1.0_d515029c01a26694cc4744b6e74093bfdaa3cb1a/classes.dex" />
+    </item>
+    <item
+        jar="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.0.1_5b32f32477b45610c67321f2c59d11d2bbb3a89e/classes.dex" />
+    </item>
+    <item
+        jar="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.1.0_a9345f033557f22044cfe527b9f7eb3c92b78c3c/classes.dex" />
+    </item>
+    <item
+        jar="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.1.0_839da731677b73397f8133045a1fa80b6f31cdba/classes.dex" />
+    </item>
+    <item
+        jar="/home/user/AndroidStudioProjects/Project/RunningMan/app/libs/retrofit-2.1.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/transforms/dex/debug/folders/1000/2/retrofit-2.1.0_8194b2f5d14ddcf5fac22b06b1ff367a648637e6/classes.dex" />
+    </item>
+    <item
+        jar="/home/user/AndroidStudioProjects/Project/RunningMan/app/libs/butterknife-7.0.1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/transforms/dex/debug/folders/1000/2/butterknife-7.0.1_665e77bf4d8a8a53da096c3d393233356677b6e5/classes.dex" />
+    </item>
+    <item
+        jar="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="37fbfbb943781974b3f8100677d8e8d3fbf9b1cf">
+        <dex dex="/home/user/AndroidStudioProjects/Project/RunningMan/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_71cebf3428a7a3f52d1b3b59dd14246e0029a3c5/classes.dex" />
+    </item>
+
+</items>

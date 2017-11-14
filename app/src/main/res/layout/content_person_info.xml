@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.moriarty.user.runningman.Activity.Person_InfoCard"
+    tools:showIn="@layout/person_info"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/person_info_refresh">
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            card_view:cardCornerRadius="4dp">
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical">
+                <com.moriarty.user.runningman.User_Defind.CircleImageView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/person_info_phone_btn"
+                    android:src="@drawable/person_info_call"/>
+                <com.moriarty.user.runningman.User_Defind.CircleImageView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:layout_toLeftOf="@id/person_info_phone_btn"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/person_info_message_btn"
+                    android:src="@drawable/person_info_message"/>
+                <TextView
+                    android:id="@+id/person_info_phone"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:layout_toLeftOf="@id/person_info_phone_btn"
+                    android:text="@string/phoneedit_hint"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            card_view:cardCornerRadius="4dp">
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical">
+                <com.moriarty.user.runningman.User_Defind.CircleImageView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/person_info_email_btn"
+                    android:src="@drawable/person_info_email"/>
+                <TextView
+                    android:id="@+id/person_info_email"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:layout_toLeftOf="@id/person_info_email_btn"
+                    android:text="@string/emailedit_hint"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/fragment_personinfo_select"/>
+
+            <android.support.v4.view.ViewPager
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="12dp"
+                android:id="@+id/viewPager2"
+                android:layout_width="match_parent"
+                android:layout_height="500dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

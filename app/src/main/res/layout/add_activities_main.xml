@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.moriarty.user.runningman.Activity.Initiate_Activities">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/initiate_activities_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_activities_app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/initiate_activities_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:statusBarScrim="@android:color/transparent"
+            app:expandedTitleTextAppearance="?android:attr/textAppearanceLarge"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7"
+                android:scaleType="centerCrop"
+                android:fitsSystemWindows="true"
+                android:background="@color/calories_color"
+                android:id="@+id/initiate_activities_background"/>
+            <ImageButton
+                android:layout_height="25dp"
+                android:layout_width="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginRight="17dp"
+                android:layout_gravity="end|bottom"
+                android:id="@+id/initiate_activities_imagebutton"
+                android:background="@drawable/ic_menu_add_pic"/>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/initiate_activities_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                >
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/add_activities_content" />
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@color/colorPrimary"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <com.moriarty.user.runningman.User_Defind.CircleImageView
+            android:id="@+id/nav_my_headrait"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            app:civ_border_color="@color/transparent"
+            app:civ_border_width="2dp"
+            android:src="@drawable/contact_default2" />
+        <ImageView
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+            android:background="@drawable/my_qrcode"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/nav_my_qrcode"/>
+        <ImageView
+            android:layout_height="35dp"
+            android:layout_width="35dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_menu_share"
+            android:layout_toLeftOf="@id/nav_my_qrcode"
+            android:layout_marginRight="10dp"
+            android:id="@+id/perfect"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:text="@string/toolbar_my_name_hint"
+            android:id="@+id/nav_my_name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/nav_my_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.moriarty.user.runningman">
+
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <permission android:name="moriarty.permission.runningman.write" />
+    <permission android:name="moriarty.permission.runningman.read" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        tools:replace="android:theme"
+        android:theme="@style/AppTheme.NoActionBar_MainActivity">
+        <activity android:name=".Login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activity.MainActivity">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".Activity.AddContacts"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar_addcontacts">
+
+            <intent-filter android:label="aaa">
+                <action android:name="com.android.contacts.action.FULL_EDIT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.item/person"/>
+                <data android:mimeType="vnd.android.cursor.item/contact"/>
+                <data android:mimeType="vnd.android.cursor.item/raw_contact"/>
+            </intent-filter>
+            <intent-filter android:label="bbb">
+                <action android:name="com.android.contacts.action.FULL_INSERT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/person"/>
+                <data android:mimeType="vnd.android.cursor.dir/contact"/>
+                <data android:mimeType="vnd.android.cursor.dir/raw_contact"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".Activity.Initiate_Activities"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar_addcontacts"/>
+
+        <activity
+            android:name=".Activity.Person_InfoCard"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar_personinfo">
+        </activity>
+        <activity
+            android:name=".Pedometer.Settings"
+            android:label="@string/activity_settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.SportsDataDisplay"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.SportsDataDisplay"/>
+        <activity
+            android:name=".Activity.HistoryDataDisplay"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.HistoryDataDisplay"/>
+        <activity
+            android:name=".Activity.ChooseContacts"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar_MainActivity"/>
+
+        <service android:name=".Pedometer.StepService"/>
+
+        <service android:name=".Service.AddContactsService">
+            <intent-filter>
+                <action android:name="com.moriarty.service.ADDCONTACESSERVICE" />
+            </intent-filter>
+        </service>
+        <service android:name=".Service.DeleteContactsService">
+            <intent-filter>
+                <action android:name="com.moriarty.service.DELETECONTACTSSERVICE" />
+            </intent-filter>
+        </service>
+        <service android:name=".Service.QueryContactsService">
+            <intent-filter>
+                <action android:name="com.moriarty.service.QUERYCONTACTSSERVICE" />
+            </intent-filter>
+        </service>
+        <service android:name=".Service.QueryIntentService">
+            <intent-filter>
+                <action android:name="com.moriarty.service.QUERYINTENTSERVICE" />
+            </intent-filter>
+        </service>
+        <service android:name=".Service.GroupSettingService">
+            <intent-filter>
+                <action android:name="com.moriarty.service.GroupSettingService" />
+            </intent-filter>
+        </service>
+        <service android:name=".Service.MDataManageService">
+            <intent-filter>
+                <action android:name="com.moriarty.service.MDataManageService"/>
+            </intent-filter>
+        </service>
+        <service android:name=".Service.AddActivityService">
+            <intent-filter>
+                <action android:name="com.moriarty.service.AddActivityService"/>
+            </intent-filter>
+        </service>
+
+
+        <provider
+            android:name=".DataBase.ContentProvider.MyContentProvider"
+            android:authorities="com.moriarty.user.runningman.Database.ContentProvider"
+            android:writePermission="moriarty.permission.runningman.write"
+            android:readPermission="moriarty.permission.runningman.read"
+            android:exported="true"/>
+
+    </application>
+
+</manifest>

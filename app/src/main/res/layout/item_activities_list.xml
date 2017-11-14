@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="topic"
+            android:id="@+id/activity_topic"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="time"
+            android:id="@+id/activity_time"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="tel"
+            android:id="@+id/activity_tel"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="address"
+            android:id="@+id/activity_address"/>
+        <ImageView
+            android:layout_height="180dp"
+            android:layout_width="360dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/activity_pic"
+            android:src="@drawable/bili"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="content"
+            android:id="@+id/activity_content"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fuck_divider_size"
+        android:background="@color/lightgray"
+        android:visibility="gone"
+        android:id="@+id/activity_divider"/>
+
+</LinearLayout>

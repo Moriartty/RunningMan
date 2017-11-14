@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="titles">
+        <item>Android</item>
+        <item>IOS</item>
+        <item>JAVA</item>
+        <item>C++</item>
+        <item>Ruby</item>
+        <item>WEB</item>
+        <item>HTML</item>
+        <item>PERL</item>
+        <item>C</item>
+        <item>SWIFT</item>
+    </string-array>
+    <string-array name="outside_api">
+        <item>weixin</item>
+        <item>qq</item>
+        <item>paypal</item>
+    </string-array>
+
+    <string-array name="items">
+        <item>姓名</item>
+        <item>电话／手机号</item>
+        <item>Email</item>
+        <item>群组名称</item>
+    </string-array>
+
+    <string-array name="groupsetting">
+        <item>新建分组</item>
+        <item>删除分组</item>
+        <item>合并分组</item>
+    </string-array>
+
+    <string-array name="person_info">
+        <item>电话</item>
+        <item>Email</item>
+        <item>QQ</item>
+        <item>微信</item>
+        <item>微博</item>
+    </string-array>
+    <string-array name="contactssetting">
+        <item>@string/menu_one</item>
+        <item>@string/menu_two</item>
+        <item>@string/menu_three</item>
+
+    </string-array>
+    <string-array name="sexy">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+
+    <string-array name="sensitivity_preference">
+        <item>@string/extra_high</item>
+        <item>@string/very_high</item>
+        <item>@string/high</item>
+        <item>@string/higher</item>
+        <item>@string/medium</item>
+        <item>@string/lower</item>
+        <item>@string/low</item>
+        <item>@string/very_low</item>
+        <item>@string/extra_low</item>
+    </string-array>
+
+    <string-array name="sensitivity_preference_values">
+        <item>1.9753</item>
+        <item>2.9630</item>
+        <item>4.4444</item><!-- 10 * 1.5^(-2) -->
+        <item>6.6667</item><!-- 10 * 1.5^(-1) -->
+        <item>10</item>
+        <item>15</item><!--     10 * 1.5      -->
+        <item>22.5</item><!--   10 * 1.5^2    -->
+        <item>33.75</item>
+        <item>50.625</item>
+    </string-array>
+
+    <string-array name="operation_level_preference">
+        <item>@string/run_in_background</item>
+        <item>@string/keep_screen_on</item>
+        <item>@string/wake_up</item>
+    </string-array>
+
+    <string-array name="operation_level_preference_values">
+        <item>run_in_background</item>
+        <item>keep_screen_on</item>
+        <item>wake_up</item>
+    </string-array>
+
+    <string-array name="units_preference">
+        <item>@string/units_metric</item>
+        <item>@string/units_imperial</item>
+    </string-array>
+
+    <string-array name="units_preference_values">
+        <item>metric</item>
+        <item>imperial</item>
+    </string-array>
+
+    <string-array name="exercise_type_preference">
+        <item>@string/exercise_type_running</item>
+        <item>@string/exercise_type_walking</item>
+    </string-array>
+    <string-array name="exercise_type_preference_values">
+        <item>running</item>
+        <item>walking</item>
+    </string-array>
+
+    <string-array name="maintain_preference">
+        <item>@string/maintain_nothing</item>
+        <item>@string/maintain_pace</item>
+        <item>@string/maintain_speed</item>
+    </string-array>
+    <string-array name="maintain_preference_values">
+        <item>none</item>
+        <item>pace</item>
+        <item>speed</item>
+    </string-array>
+
+    <string-array name="speaking_interval_preference">
+        <item>@string/interval_15_seconds</item>
+        <item>@string/interval_30_seconds</item>
+        <item>@string/interval_1_minute</item>
+        <item>@string/interval_2_minutes</item>
+        <item>@string/interval_5_minutes</item>
+        <item>@string/interval_10_minutes</item>
+    </string-array>
+    <string-array name="speaking_interval_preference_values">
+        <item>0.25</item>
+        <item>0.5</item>
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+
+
+</resources>

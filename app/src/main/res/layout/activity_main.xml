@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <com.moriarty.user.runningman.User_Defind.CircleImageView
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                toolbar:civ_border_color="@color/transparent"
+                toolbar:civ_border_width="2dp"
+                android:id="@+id/toolbar_my_headrait" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="@string/toolbar_my_name_hint"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:id="@+id/toolbar_my_name" />
+        </android.support.v7.widget.Toolbar>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            app:tabSelectedTextColor="@color/white"
+            app:tabIndicatorColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <include layout="@layout/content_main"/>
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/start_running_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/ic_menu_add_activity" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_contacts_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="70dp"
+        android:src="@drawable/ic_menu_add_contact" />-->
+
+    <com.moriarty.user.runningman.User_Defind.FloatingActionButton.MultiFloatingActionButton
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:backgroundColor="@color/white"
+        app:switchFabColor="@color/colorAccent"
+        app:switchFabIcon="@drawable/ic_menu_add"
+        app:layout_behavior="com.moriarty.user.runningman.User_Defind.FloatingActionButton.HideBehavior"
+        app:animationMode="scale">
+
+        <com.moriarty.user.runningman.User_Defind.FloatingActionButton.TagFabLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tagText="添加联系人"
+            android:id="@+id/add_contacts_btn"
+            >
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu_add_contact"
+                app:backgroundTint="#468cb7"
+                app:fabSize="mini" />
+        </com.moriarty.user.runningman.User_Defind.FloatingActionButton.TagFabLayout>
+        <com.moriarty.user.runningman.User_Defind.FloatingActionButton.TagFabLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tagText="发布新活动"
+            android:id="@+id/start_running_btn"
+            >
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu_add_activity"
+                app:backgroundTint="#468cb7"
+                app:fabSize="mini" />
+        </com.moriarty.user.runningman.User_Defind.FloatingActionButton.TagFabLayout>
+    </com.moriarty.user.runningman.User_Defind.FloatingActionButton.MultiFloatingActionButton>
+
+
+</android.support.design.widget.CoordinatorLayout>

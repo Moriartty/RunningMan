@@ -1,0 +1,25 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="MainActivity">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/listen_state_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="70dp"
+        android:src="@drawable/start"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

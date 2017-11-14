@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="connected_filed_tips">无法更新天气,请打开网络连接</string>
+</resources>

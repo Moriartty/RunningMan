@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>    //这里选择蓝色对透明进行覆盖
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar_MainActivity">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>    //这里选择蓝色对透明进行覆盖
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/MainActivity_ActivityAnimation</item>
+    </style>
+    <style name="MainActivity_ActivityAnimation">
+        <item name="android:activityOpenEnterAnimation">@animator/zoomin</item>    //新activity的开启动画(以进的状态)
+        <item name="android:activityCloseExitAnimation">@animator/zoomout_bottom_center</item>   //原activity的退出动画
+    </style>
+
+
+
+    <style name="AppTheme.NoActionBar_personinfo">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>    //依旧使用透明状态栏
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/Person_InfoCard_ActivityAnimation</item>
+    </style>
+    <style name="Person_InfoCard_ActivityAnimation">
+        <item name="android:activityOpenEnterAnimation">@animator/zoomin</item>    //新activity的开启动画(以进的状态)
+        <item name="android:activityOpenExitAnimation">@animator/zoomout</item>    //原activity的退出动画
+        <item name="android:activityCloseEnterAnimation">@animator/zoomin</item>   //新activity的开启动画(以退的状态)
+        <item name="android:activityCloseExitAnimation">@animator/zoomout_right</item>   //原activity的退出动画
+    </style>
+
+
+
+    <style name="AppTheme.NoActionBar_addcontacts">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>    //依旧使用透明状态栏
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/AddContacts_ActivityAnimation</item>
+    </style>
+    <style name="AppTheme.SportsDataDisplay">
+        <item name="colorPrimaryDark">@color/darkslategray</item>
+        <item name="windowActionBar">true</item>
+        //注意，这里不要设置成为android:colorPrimary属性，没有用
+        <item name="colorPrimary">@color/darkslategray</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/AddContacts_ActivityAnimation</item>
+    </style>
+
+
+    <style name="AppTheme.HistoryDataDisplay">
+        <item name="colorPrimaryDark">@color/darkslategray</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        //注意，这里不要设置成为android:colorPrimary属性，没有用
+
+        <item name="android:windowAnimationStyle">@style/AddContacts_ActivityAnimation</item>
+    </style>
+
+
+    <style name="AddContacts_ActivityAnimation">
+        <item name="android:activityOpenEnterAnimation">@animator/zoomin_bottom_right</item>    //新activity的开启动画(以进的状态)
+        <item name="android:activityOpenExitAnimation">@animator/zoomout_center</item>    //原activity的退出动画
+        <item name="android:activityCloseEnterAnimation">@animator/zoomin</item>   //新activity的开启动画(以退的状态)
+        <item name="android:activityCloseExitAnimation">@animator/zoomout_right</item>   //原activity的退出动画
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

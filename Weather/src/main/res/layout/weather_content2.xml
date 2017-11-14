@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/weather_content"
+    tools:context=".WeatherActivity">
+    <TextView
+        style="@style/w_section_title"
+        android:text="24h预报" />
+
+    <com.moriarty.user.weather.OtherUserDefind.HourlyForecastView
+        android:id="@+id/w_hourlyForecastView"
+        android:layout_width="match_parent"
+        android:layout_height="144dp" />
+
+</LinearLayout>
