@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.login.servlet.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>CheckUsernameServlet</servlet-name>
+    <servlet-class>com.login.servlet.CheckUsernameServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>SignUpServlet</servlet-name>
+    <servlet-class>com.login.servlet.SignUpServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>CreateActivityServlet</servlet-name>
+    <servlet-class>com.login.servlet.CreateActivityServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>DeleteActivityServlet</servlet-name>
+    <servlet-class>com.login.servlet.DeleteActivityServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>QueryActivityServlet</servlet-name>
+    <servlet-class>com.login.servlet.QueryActivityServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet-mapping>
+    <servlet-name>CheckUsernameServlet</servlet-name>
+    <url-pattern>/CheckUsernameServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SignUpServlet</servlet-name>
+    <url-pattern>/SignUpServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>QueryActivityServlet</servlet-name>
+    <url-pattern>/QueryActivityServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>CreateActivityServlet</servlet-name>
+    <url-pattern>/CreateActivityServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>DeleteActivityServlet</servlet-name>
+    <url-pattern>/DeleteActivityServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
