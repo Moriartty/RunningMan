@@ -47,4 +47,25 @@ public class Request {
                     }
                 });
         }
+
+    public void doGet(String url, RequestParams p,final Handler handler,final int flag){
+        httpUtils.send(HttpRequest.HttpMethod.GET, url,p
+                , new RequestCallBack<String>() {
+                    public void onFailure(HttpException arg0, String arg1) {
+                        if(arg0 instanceof HttpException){
+                            Log.d(MainActivity.TAG, "http exception:"+arg1+";"+arg0.toString());
+                            Message m=new Message();
+                            m.what=EXCEPTION_FLAG;
+                            handler.sendMessage(m);
+                        }
+                    }
+                    public void onSuccess(ResponseInfo<String> arg0) {
+                        Log.d("onSuccess", arg0.result);
+                        Message m=new Message();
+                        m.what=flag;
+                        m.obj=arg0.result;
+                        handler.sendMessage(m);
+                    }
+                });
+    }
 }
